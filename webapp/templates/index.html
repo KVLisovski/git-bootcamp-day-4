@@ -4,10 +4,16 @@
 {% block title %}Notes — список заметок{% endblock %}
 
 {% block content %}
-    <section class="search search--perf">
-    <div class="search__perf-banner">
-      <b>Perf mode:</b> поиск настроен под нагрузочные тесты — увеличен лимит выдачи (до 200), упрощён scoring.
-    </div>
+  <section class="welcome">
+    <h2 class="welcome__title">Добро пожаловать в Notes</h2>
+    <p class="welcome__lead">
+      Это лёгкий сервис заметок: создайте новую заметку через форму ниже или
+      воспользуйтесь поиском. Подсказка: добавляйте теги, чтобы потом удобно
+      было фильтровать.
+    </p>
+  </section>
+
+  <section class="search">
     <form method="get" action="{{ url_for('notes.index') }}" class="search__form">
       <input
         type="search"
@@ -25,6 +31,7 @@
       </p>
     {% endif %}
   </section>
+
 
 
   <section class="composer">
