@@ -62,7 +62,7 @@ git rebase feat/perf-tuning
 
 ### ⭐1 — `git pull` vs `git pull --rebase`
 
-Что было воспроизведено, какая разница в истории получилась, какую глобальную настройку поставили в `~/.gitconfig`.
+На локальном репозитории создан файл NODE.md и LAB.md и успешно добавлены коммиты, затем через web добавлен так же файлик from-server.md. Я прошел оба этапа и git pull по умолчанию и rebase. В gitconfig выстаивл true pull.rebase, так как более чистый результат. Хотя при первом варианте он мне предложил самому исправить дефолтное `Merge branch 'main' of github.com:KVLisovski/git-bootcamp-day-4`. 
 
 ![Состояние истории до/после pull --rebase](screenshots/star-1-pull-rebase.png)
 
